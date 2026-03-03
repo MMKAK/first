@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .mac-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f5f5f7;
+}
+
+
+.mac-nav {
+  display: flex;
+  justify-content: space-between;  
+               
+  flex-wrap: nowrap;        
+  overflow-x: auto;         
+}
+
+
+.mac-nav a {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.mac-nav a img {
+  height: 80px;            
+  margin-bottom: 0.5rem;  
+}
+
+.mac-nav a:hover {
+  color: #0071e3;           
+}
+
+.main{
+    background-color:lightgrey;
+    text-align: center;
+padding: 0.5rem;
+}
+
+
+/* CARD */
+.card-container {
+  display: flex;
+  gap: 2rem;             
+  margin-left: 2rem;     
+  margin-top: 2rem;      
+}
+
+.card {
+  width: 30vw;           
+  text-decoration: none;
+  color: #1d1d1f;
+  display: flex;
+  flex-direction: column; 
+}
+
+.card img {
+  width: 100%;          
+  height: auto;           
+  display: block;
+  margin-bottom: 1rem;    
+}
+
+.card-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-text h3 {
+  font-size: 0.9rem;
+  color: #555;  text-align: center;
+
+}
+.btn{
+  padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 26px;
+      cursor: pointer;
+      background-color: #0071e3;
+      color:white;
+      margin: 5px;
+      transition: 0.3s;
+      margin-left: 3rem;
+      margin-bottom: 4rem;
+}
+.contaner {
+      width: 100%;
+      height: 180vh;
+      padding: 20px;
+background-color:rgba(245, 237, 179, 0.295);     
+ 
+      /* margin-top:-6rem; */
+      /* margin-top: 2rem; */
+    }
+
+
+    .cad-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      height: 650px;
+      padding-top: 222px;
+      margin-top: -10rem;
+      margin-left: 2rem;
+    }
+
+    .cad {
+      border: 1px solid goldenrod;
+      background: white;
+      border-radius: 12px;
+     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+      height: 58vh;
+      /* margin-left:4px; */
+      width: 20rem;
+    }
+ 
+
+.cad {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content:space-betwee;
+  position: relative;
+  align-items: center;
+  padding: 8px;
+  padding-top: 33px;
+}
+.cad h2{
+  margin-bottom: 0px;
+}
+
+.cad .b {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  border: none;
+  font-size: large;
+  margin-top: -31rem;
+}
+.heading{
+  width: 50vw;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-start ;
+  margin-top: 4rem;
+  font-size: 55px;
+}
+
+.one{
+  height: 104vh;
+  width: 27vw;
+  margin-bottom: 24rem;
+background: url(https://www.apple.com/assets-www/en_WW/mac/feature_card/small/fc_values_0207c2c0d_2x.jpg);
+}
+
+
+.second{
+  background: url(https://www.apple.com/assets-www/en_WW/mac/01_feature_card/small/fc_performance_0f92b741a_2x.jpg);
+  height: 104vh;
+  width: 27vw;
+    margin-bottom: 24rem;
+
+}
+
+.three{
+  background-color: antiquewhite;
+  background: url(https://www.apple.com/assets-www/en_WW/mac/01_feature_card/small/fc_performance_0f92b741a_2x.jpg);
+  height: 104vh;
+  width: 27vw;
+    margin-bottom: 24rem;
+
+}
+.two{
+  background-color:white;
+  margin-top: -13rem;
+}
+
+.M{
+    padding-left: 4rem;
+    padding-top: 4rem;
+    font-size:37px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 28vw;
+background-color: grey;
+padding: 01rem;
+border-radius: 33px;
+margin-left: 4rem;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+
+}
+.list a:hover{
+        background-color: black;
+padding:auto;
+}
+
+
+/* FOOTER  */
+.p{
+    margin-top: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+      background-color: snow;
+padding-bottom: 2rem;
+    font-size: smaller;
+  }
+.footer {
+  background-color: snow;
+  color:rgba(0, 0, 0, 0.945);
+  padding: 40px 6rem;
+font-size: smaller;
+font-weight: lighter;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* makes it responsive */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 180px; /* grow/shrink and min width */
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: #f39c12; /* hover effect */
+}
+.high {
+  width: 1100px;              /* 90% screen width */
+margin-top: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;           /* two columns */
+  height: 300px;
+
+  margin-bottom: 3rem;
+
+}
+
+/* IMAGE */
+.ii img {
+  width: 100%;
+
+  height: 300px;
+/* border-radius: 33%;  max-width: 350px; */
+/* border-top-right-radius: 13%; */
+border-top-right-radius: 6%;
+border-bottom-right-radius: 6%;
+}
+
+/* TEXT BOX */
+.txt {
+border-top-left-radius: 8%;
+border-bottom-left-radius: 8%;
+  flex: 1;
+  display: flex;           /* center text */
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;
+  background: #f2f2f2;
+  padding:3%;
+  height: 235px;
+  margin-bottom: 5rem;
+}
+.text h2{
+  width: 8rem;
+}
+.help{
+  font-size: 55px;
+  margin-left:5rem ;
+}
+.cards{
+  width: 100%;
+  height: 111vh;
+  background-color: aqua;
+}
+.card2{
+  display: grid;
+  grid-template-rows: 2,1fr;
+  background-color: #f39c12;
+}
+    </style>
+</head>
+<body>
+
+</body>
+<section class="mac-section">
+
+
+
+  <nav class="mac-nav">
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macbookair15.macbookair13_7e8b978ec.svg" alt="MacBook Air">
+      <span>MacBook Air</span>
+    </a> <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macbookair15.macbookair13_7e8b978ec.svg" alt="MacBook Air">
+      <span>MacBook Pro</span>
+    </a>
+    
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/imac24_065a2bf21.svg" alt="iMac">
+      <span>iMac</span>
+    </a>
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macmini_f7eabee7b.svg" alt="Mac mini">
+      <span>Mac mini</span>
+    </a>
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macstudio_d48bbc5a3.svg" alt="Mac Studio">
+      <span>Mac Studio</span>
+    </a>
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macpro_a0f334173.svg" alt="Mac Pro">
+      <span>Mac Pro</span>
+    </a>
+    <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/helpmechoose_dc7206dee.svg" alt="Help Me Choose">
+      <span>Help Me Choose</span>
+    </a>
+   
+   
+ <a href="#">
+      <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/compare_e6faa4436.svg" alt="MacBook Air">
+      <span>Compare</span>
+    </a>
+
+     <a href="#">
+       <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/displays_ce60bd4d1.svg" alt="Displays">
+      <span>Displays</span>
+    </a>
+
+    <a href="">
+        <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/accessories_3bf8fc936.svg" alt="">
+        <span>Accessory</span>
+    </a>
+
+    <a href="">
+        <img src="https://www.apple.com/assets-www/en_WW/mac/chapternav/macos_a763f3f5e.svg" alt="">
+         <span>Shop Mac</span>
+    </a>
+  </nav>
+</section>
+
+
+<main>
+    <div class="main">
+        <p>Buy Mac with education savings.* <a href="#">Shop</a></p>
+    </div>
+</main>
+<div class="M">
+    <h1>Mac</h1>
+</div>
+<div class="list">
+    <a href="#">All Products</a>
+    <a href="#">Laptops</a>
+    <a href="#">Desktops</a>
+    <a href="#">Displays</a>
+</div>
+
+<div class="card-container">
+  <a href="#" class="card">
+    <img src="https://www.apple.com/assets-www/en_WW/mac/01_product_tile/large/studio_display_3fc031be0_2x.jpg" alt="Studio Display">
+    <div class="card-text">
+      <h1>Studio Display</h1>
+      <p>A 5K Retina display with stellar camera <br> and audio.</p>
+      <h3>From $1599 or $133.25/mo. <br> for 12 mo.**</h3>
+        <button class="btn">Learn more</button>
+
+    </div>
+  </a>
+
+  <a href="#" class="card">
+    <img src="https://www.apple.com/assets-www/en_WW/mac/01_product_tile/large/pro_display_8596d9439_2x.jpg" alt="Pro Display XDR">
+    <div class="card-text">
+      <h1>Pro Display XDR</h1>
+      <p>An advanced 6K XDR display for pro <br> workflows.</p>
+      <h3>From $4999 or $416.58/mo. <br> for 12 mo.**</h3>
+      <button class="btn">Learn more</button>
+    </div>
+  </a>
+</div>
+
+
+<div class="contaner">
+<div class="t">
+<h1 class="heading">Why Apple is the best
+place to buy Mac.</h1>
+
+</div>
+
+
+    <div class="cad-wrapper">
+      <div class="cad">
+        <h5>Pay for your new Mac over time, interest‑free with Apple Card.Footnote ◊ symbol◊ Simply choose to check out at Apple with Apple apply.</h5>
+        <h2 >Apple Card Monthly Installments.</h2>
+
+        <button class="b">Read more</button>
+
+      </div>
+
+      <div class="cad">
+        <h3 class="h3">You can save on a new iPad, Mac, and more</h3>
+        <h2>Shop our Education Store and save.</h2>
+                <button class="b">Read more</button>
+
+        
+      </div>
+
+      <div class="cad">
+        <h2>Run large language models like Ollama on H100 GPUs</h2>
+        <h3 class="h3"></h3>    
+            <button class="b">Read more</button>
+
+      </div>     </div>     </div>
+
+      
+      <!-- SECOND -->
+      
+<div class="contaner two">
+<div class="t">
+<h1 class="heading">Get to know Mac.</h1>
+
+</div>
+
+
+    <div class="cad-wrapper">
+      <div class="cad one">
+        <h5>Pay for your new Mac over time, interest‑free with Apple Card.Footnote ◊ symbol◊ Simply choose to check out at Apple with Apple apply.</h5>
+        <h2 >Apple Card Monthly Installments.</h2>
+
+        <button class="b">Read more</button>
+
+      </div>
+
+      <div class="cad second">
+        <h3 class="h3">You can save on a new iPad, Mac, and more</h3>
+        <h2>Shop our Education Store and save.</h2>
+                <button class="b">Read more</button>
+
+        
+      </div>
+
+      <div class="cad three">
+        <h2>Run large language models like Ollama on H100 GPUs</h2>
+        <h3 class="h3">Jump into online, one‑on‑one sessions.</h3>    
+            <button class="b">Read more</button>
+
+      </div>     </div>     </div>
+
+
+  
+      <!-- <MAIN> -->
+
+       <h1 class="help">Help me choose</h1>
+        <div class="high">
+  
+  <div class="txt">
+    <div>
+      <h2>Answer a few questions <br> to find the best <br> Mac for you</h2>
+                  <button class="btn">Get Start</button>
+
+    </div>
+  </div>
+  <div class="ii">
+    <img src="https://www.apple.com/v/mac/mac-does-that/o/images/overview/get_more/speed__cyk5cej25xua_large_2x.jpg" alt="">
+  </div>
+</div>
+
+
+<section>
+  <div class="cards">
+<h1>Switch to Mac.</h1>
+    <div class="card2">
+<div class="img">
+  <h2>Give us the old. And save the new</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium assumenda reprehenderit commodi fugiat ab, asperiores numquam quibusdam hic temporibus expedita eum id optio?</p>
+  <img src="https://www.apple.com/assets-www/en_WW/mac/01_image_accordion/small/mac_iphone_b0dee664f_2x.jpg" alt="">
+</div>
+
+<div class="img">
+  <img src="" alt="">
+  <h2>Give us the old. And save the new</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium assumenda reprehenderit commodi fugiat ab, asperiores numquam quibusdam hic temporibus expedita eum id optio?</p>
+
+</div>
+
+    </div>
+  </div>
+</section>
+     
+
+      
+  
+
+
+
+
+
+
+<!-- FOOTER  -->
+ <div class="p">
+ * Education pricing is available to current and newly accepted college students and their parents, as well as faculty, staff, and homeschool teachers of all grade levels. For more information, visit apple.com/us-edu/store.
+** Financing available to qualified customers, subject to credit approval and credit limit, and requires you to select Apple Card Monthly Installments (ACMI) as your payment type at checkout at Apple. Financing terms vary by product. Taxes and shipping on items purchased using ACMI are subject to your card’s variable APR, not the ACMI 0% APR. ACMI is not available for purchases made at special storefronts or when using such special discounts in-store at Apple, except ACMI is available at the Education storefront and with the Education discount. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI is subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See the Apple Card Customer Agreement for more information about ACMI.
+◊ Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1⁠‑⁠8⁠0⁠0⁠‑⁠M⁠Y⁠‑⁠A⁠P⁠P⁠L⁠E, and is subject to credit approval and credit limit. See here for more information about eligible products. Existing customers: See your Customer Agreement for your variable APR. As of January 1, 2026, the variable APR on new Apple Card accounts ranges from 17.49% to 27.74%. You must elect to use ACMI at checkout. If you buy an ACMI‑eligible product with a one-time payment on Apple Card at checkout, that purchase is subject to your Apple Card’s variable APR, not the ACMI 0% APR. Taxes and shipping on items purchased using ACMI are subject to your Apple Card’s variable APR, not the ACMI 0% APR. In order to buy an iPhone with ACMI, you must select one of the following carriers (prepaid carrier plans are not supported): AT&T, Boost Mobile, T‑Mobile, or Verizon. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time, subject to your carrier’s terms. ACMI is not available for purchases made at the following special storefronts or when using these discounts in-store at Apple: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government and Veterans and Military Purchase Programs; or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI is subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See the Apple Card Customer Agreement for more information about ACMI.
+
+To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+
+Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.
+
+All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English. Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 8⁠7⁠7⁠-⁠2⁠5⁠5⁠-⁠5⁠9⁠2⁠3 with questions about Apple Card.
+
+Software and content may be sold separately. Title availability is subject to change.
+Testing conducted by Apple August through October 2024 using preproduction 16-inch MacBook Pro systems with A⁠p⁠p⁠l⁠e⁠ ⁠M⁠4⁠ ⁠P⁠r⁠o⁠, 14‑core CPU, 20‑core GPU, 48GB of RAM, and 512GB SSD. Wireless web battery life tested by browsing 25 popular websites while connected to Wi-Fi. Video streaming battery life tested with 1080p content in Safari while connected to Wi-Fi. All systems tested with display brightness set to 8 clicks from bottom and keyboard backlight off. Battery life varies by use and configuration. See apple.com/batteries for more information.
+Apple Intelligence is available in beta. <br> Some features may not be available in all regions or languages. <br> For feature and language availability and system requirements, see support.apple <br>.com/121115.
+Available on Mac computers with Apple silicon and Intel-based Mac computers with a T2 Security Chip. Requires that your iPhone and Mac are signed in with the same A⁠p⁠p⁠l⁠e⁠ ⁠A⁠c⁠c⁠o⁠u⁠n⁠t using two-factor authentication, your iPhone and Mac are near each other and have Bluetooth and Wi-Fi turned on, and your Mac is not using AirPlay or Sidecar. Some iPhone features (e.g., camera and microphone) are not compatible with iPhone Mirroring.
+Requires that your iPhone, with an active carrier plan, and Mac are signed in with the same Apple Account, your iPhone and Mac are near each other, signed in to FaceTime with the same Apple Account, have Wi‑Fi turned on, and are connected to the same network. An external microphone or headset is required for Mac Studio, Mac mini, and Mac Pro.
+Handoff requires an iPhone or iPad with iOS 8 or later or iPadOS.
+Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel, or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply. <br>
+Some features may not be available in all regions or all languages. <br>
+Some features require an Apple Account, compatible hardware, and compatible internet access or cellular network; additional fees and terms m⁠a⁠y⁠ ⁠a⁠p⁠p⁠l⁠y⁠. <br>
+Some features require specific hardware and software. For more information, see support.apple.com/108046. <br>
+Stellarium image of the M31 galaxy by Lee, Ang (HG731GZ). Creative Commons Attribution License 3.0. <br>
+</div>
+<hr>
+
+<!-- FOOTER  -->
+ <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+<li>About</li>
+<li>Leadership</li>
+<li>Blog</li>
+<li>Careers</li>
+<li>Customers</li>
+<li>Partners</li>
+<li>Referral Program
+</li>
+<li>Affiliate Program</li>
+<li>Press</li>
+<li>Legal</li>
+<li>Privacy Policy</li>
+<li>Security</li>
+<li>Investor Relations</li>
+       
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+
+    <div class="footer-column">
+    
+  <h4>Products</h4>
+  <ul>
+    <li>Overview</li>
+    <li>Droplets</li>
+    <li>Kubernetes</li>
+    <li>Functions</li>
+    <li>App Platform</li>
+    <li>Gradient™ AI GPU Droplets</li>
+    <li>Gradient™ AI Bare Metal GPUs</li>
+    <li>Gradient™ AI 1-Click Models</li>
+    <li>Gradient™ AI Platform</li>
+    <li>Load Balancers</li>
+    <li>Managed Databases</li>
+    <li>Spaces</li>
+    <li>Block Storage</li>
+    <li>Network File Storage</li>
+    <li>API</li>
+    <li>Uptime</li>
+    <li>Identity and Access Management</li>
+    <li>Cloudways</li>
+  </ul>
+
+
+    </div>
+
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+       <li>Resources</li>
+    <li>Community Tutorials</li>
+    <li>Community Q&A</li>
+    <li>CSS-Tricks</li>
+    <li>Write for Donations</li>
+    <li>Currents Research</li>
+    <li>DigitalOcean Startups</li>
+    <li>Wavemakers Program</li>
+    <li>Compass Council</li>
+    <li>Open Source</li>
+    <li>Newsletter Signup</li>
+    <li>Marketplace</li>
+    <li>Pricing</li>
+    <li>Pricing Calculator</li>
+    <li>Documentation</li>
+    <li>Release Notes</li>
+    <li>Code of Conduct</li>
+    <li>Shop Swag</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+     <li>Website Hosting</li>
+    <li>VPS Hosting</li>
+    <li>Web & Mobile Apps</li>
+    <li>Game Development</li>
+    <li>Streaming</li>
+    <li>VPN</li>
+    <li>SaaS Platforms</li>
+    <li>Cloud Hosting for Blockchain</li>
+    <li>Startup Resources</li>
+    <li>Migration Assistance</li>
+
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Solution</h4>
+      <ul>
+        <li>Contact</li>
+    <li>Support</li>
+    <li>Sales</li>
+    <li>Report Abuse</li>
+    
+    <li>System Status</li>
+    <li>Share your ideas</li>
+      </ul>
+    </div>
+    </div>
+    <p>More ways to shop: <a href="#">Find an Apple Store / other retai ler</a>near you. Or call <a href="#">1-800-MY-APPLE </a> (1-800-692-7753)</p>
+    <br><br>
+    <hr>
+    <p>Copyright © 2026 Apple Inc. All rights reserved.  .      Privacy | Policy | Terms of Use | Sales and Refunds | Legal | Site Map</p>
+    </div>
+
+
+</footer>
+
+
+</html>
